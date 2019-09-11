@@ -3,4 +3,10 @@ var recipes= new Object({prop:'2'});
 function updateObjectWithKeyAndValue(object, key, value){
   return Object.assign({},object,{[key]: value})
 }
-function 
+function destructivelyupdateObjectWithKeyAndValue(obj, key, value) {
+  obj[key] = value
+ 
+  return obj
+}
+}
+
